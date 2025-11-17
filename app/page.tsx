@@ -1,46 +1,5 @@
 import Link from "next/link";
 
-const features = [
-  {
-    title: "Reflejos en tiempo real",
-    description:
-      "Rounds cortos con timers que se achican cada vez que sumás score. Ideal para calentar antes del open mat.",
-  },
-  {
-    title: "Progresión de cinturón",
-    description:
-      "Ganá XP en cada contra, avanzá de blanco a negro y reiniciá cuando quieras sin perder tus skills.",
-  },
-  {
-    title: "Feedback inmersivo",
-    description:
-      "Sonidos, vibraciones opcionales y mensajes del coach para que sientas un roll sin salir del browser.",
-  },
-  {
-    title: "Integración simple",
-    description:
-      "Next.js App Router + TypeScript + Tailwind 4 + Framer Motion. Sin dependencias extra.",
-  },
-];
-
-const steps = [
-  {
-    step: "01",
-    title: "Entrá al tatami",
-    copy: "Visitá /bjj y tocá “Start Roll”. No hay registro ni ajustes previos.",
-  },
-  {
-    step: "02",
-    title: "Reaccioná",
-    copy: "Elegí la contra correcta (tap o 1/2/3) antes de que el reloj llegue a cero.",
-  },
-  {
-    step: "03",
-    title: "Escalá cinturones",
-    copy: "Sumá puntos, recuperá stamina y desbloqueá cinturones cada 100 XP.",
-  },
-];
-
 const playTips = [
   "El oponente tira Pase, Barrido o Sumisión.",
   "Respondé con la contra correcta usando los botones o las teclas 1/2/3.",
@@ -52,12 +11,6 @@ const counterRules = [
   { attack: "Pase de guardia", losesTo: "Barrido" },
   { attack: "Barrido", losesTo: "Sumisión" },
   { attack: "Sumisión", losesTo: "Pase de guardia" },
-];
-
-const heroStats = [
-  { label: "Reacción promedio", value: "2.1s" },
-  { label: "Cinturones simulados", value: "5" },
-  { label: "Inputs soportados", value: "Tap + 1/2/3" },
 ];
 
 export default function Home() {
@@ -81,10 +34,6 @@ function Hero() {
         <h1 className="text-4xl font-semibold leading-tight text-white">
           Entrená reflejos BJJ desde tu teléfono.
         </h1>
-        <p className="text-base text-neutral-300">
-          Timers dinámicos, feedback inmediato y progreso de cinturones. Listo para integrar en tu
-          proyecto Next.js sin configuraciones extras.
-        </p>
       </div>
       <div className="flex flex-col gap-3 sm:flex-row">
         <Link
